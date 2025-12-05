@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>WEB form</title>
+
+<style>
+    body {
+        font-family: "Segoe UI", Tahoma;
+        background: #eef6ff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #003e7f;
+    }
+
+    .container {
+        width: 480px;
+        background: #ffffff;
+        padding: 25px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+        display: inline-block;
+        width: 120px;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+        width: 220px;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid #bbb;
+    }
+
+    select {
+        width: 260px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        accent-color: #0073ff;
+    }
+
+    .btn {
+        display: block;
+        width: 120px;
+        margin: 25px auto 0;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        background: #0051ff;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #003fcc;
+    }
+
+</style>
+</head>
+<body>
+
+<h2>แบบสอบถามข้อมูล</h2>
+
+<div class="container">
+
+    <h3>ข้อมูลผู้ตอบแบบสอบถาม</h3>
+
+    <label>ชื่อ - นามสกุล:</label>
+    <input type="text"><br>
+
+    <label>รหัสนักศึกษา:</label>
+    <input type="text"><br><br>
+
+    <b>เพศ:</b><br>
+    <input type="radio" name="gender" value="male"> ชาย
+    <input type="radio" name="gender" value="female" style="margin-left:25px;"> หญิง
+    <br><br>
+
+    <b>คณะ:</b><br>
+    <select name="faculty" size="7">
+        <option>วิทยาศาสตร์</option>
+        <option>วิทยาการคอมพิวเตอร์</option>
+        <option>ครุศาสตร์</option>
+        <option>บริหารธุรกิจและการจัดการ</option>
+        <option>มนุษยศาสตร์</option>
+        <option>เทคโนโลยีอุตสาหกรรม</option>
+        <option>พยาบาลศาสตร์</option>
+        <option>สาธารณสุขศาสตร์</option>
+        <option>แพทย์แผนไทยและการแพทย์ทางเลือก</option>
+        <option>นิติศาสตร์</option>
+    </select>
+
+    <br><br>
+
+    <b>สิ่งที่ชอบ:</b><br>
+    <input type="checkbox" name="like" value="แดง"> สีแดง  
+    <input type="checkbox" name="like" value="เขียว"> สีเขียว 
+    <input type="checkbox" name="like" value="น้ำเงิน"> สีน้ำเงิน 
+    <input type="checkbox" name="like" value="ดำ"> ดำ  
+    <br><br>
+
+    <b>ผลไม้ที่ชอบ:</b><br>
+    <input type="checkbox" name="fruit" value="มะม่วง"> มะม่วง  
+    <input type="checkbox" name="fruit" value="ทุเรียน"> ทุเรียน  
+    <input type="checkbox" name="fruit" value="สับปะรด"> สับปะรด 
+    <input type="checkbox" name="fruit" value="แตงโม"> แตงโม  
+    <br><br>
+
+    <b>อาหารที่ชอบ:</b><br>
+    <input type="checkbox" name="food" value="ส้มตำ"> ส้มตำ  
+    <input type="checkbox" name="food" value="ไม่เผ็ดหมูสับ"> ไข่เจียวหมูสับ  
+    <input type="checkbox" name="food" value="แกงกะทิ"> แกงกะทิ
+    <br>
+    <input type="checkbox" name="food" value="แกงเขียวหวานไก่"> แกงเขียวหวานไก่  
+    <input type="checkbox" name="food" value="ผัดไทย"> ผัดไทย  
+    <input type="checkbox" name="food" value="ราดหน้า"> ราดหน้า  
+    <br><br>
+
+    <button class="btn">บันทึก</button>
+
+</div>
+
+</body>
+</html>
